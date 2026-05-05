@@ -1,0 +1,20 @@
+SwA:
+  => Made 192.168.2.1 default-gateway
+  => Vlan 1 up (ip 192.168.2.11)
+     - Everything works perfect.
+
+SwB:
+  => Made 192.168.2.2 default-gateway
+  => Vlan 1 up (192.168.2.12)
+    Everything works perfect.
+
+SwC:
+   => Made 192.168.2.1 default-gateway
+   => Vlan 1 up (IP 192.168.2.13)
+
+SwC:
+   => Made 192.168.2.1 default-gateway
+   => Vlan 1 up (IP 192.168.2.14)
+
+# Worked on HSRP: But I can't ping web server or Mickey (standby interface was g0/1 for both Goofy and Donald)
+# Changed the standby to g0/2 for both Goofy and Donald.(works perfectly. meaning we only focus on interfaces that are connected to end-devices)
